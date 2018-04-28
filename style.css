@@ -1,0 +1,676 @@
+@CHARSET "ISO-8859-1";
+@font-face {
+	font-family: 'Campton Book';
+	src: url('fonts/Campton-BoldDEMO.eot');
+	src: url('fonts/Campton-BoldDEMO.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Campton-BoldDEMO.woff2') format('woff2'),
+		url('fonts/Campton-BoldDEMO.woff') format('woff'),
+		url('fonts/Campton-BoldDEMO.ttf') format('truetype'),
+		url('fonts/Campton-BoldDEMO.svg#Campton-BoldDEMO') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Campton Light DEMO';
+	src: url('fonts/Campton-LightDEMO.eot');
+	src: url('fonts/Campton-LightDEMO.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Campton-LightDEMO.woff2') format('woff2'),
+		url('fonts/Campton-LightDEMO.woff') format('woff'),
+		url('fonts/Campton-LightDEMO.ttf') format('truetype'),
+		url('fonts/Campton-LightDEMO.svg#Campton-LightDEMO') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+
+
+/* Reset CSS
+ * --------------------------------------- */
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+table {
+    border-spacing: 0;
+}
+
+fieldset,
+img {
+    border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+    font-weight: normal;
+    font-style: normal;
+}
+
+strong {
+    font-weight: bold;
+}
+
+ol,
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+caption,
+th {
+    text-align: left;
+}
+
+h1,
+h2,
+h3,
+h           4,
+h5,
+h6 {
+    font-weight: normal;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    color: #444;
+}
+
+q:before,
+q:after {
+    content: '';
+}
+
+abbr,
+acronym {
+    border: 0;
+}
+
+
+/* Custom CSS
+ * --------------------------------------- */
+
+body {
+    font-family: arial, helvetica;
+    color: #333;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+#info {
+    width: 400px;
+    margin-left: 30px;
+    margin-top: 60px;
+}
+
+#rightphoto{
+    width: 400px;
+    margin-righ         t: 0px;
+    margin-top: 0px;
+}
+
+h1 {
+    font-size: 6em;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: left;
+    font-family: 'Campton Book';
+}
+
+h4 {
+    text-align: left;
+    font-size: 18px;            
+    padding-bottom: 20px;
+    font-family: 'Campton Light DEMO';
+}
+
+p {         
+    font-size: 16px;
+    text-align: left;
+    font-family: 'Campton Light DEMO';
+}
+
+.ms-section {
+    text-align: center;
+}           
+
+#menu li {
+    display: inline-block;
+    margin: 10px;
+    color: #000;
+    background: #fff;
+    background: rgba(255, 255, 255, 0.3);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+#menu li.active {
+    background: #666;
+    background: rgba(255, 255, 255, 1);
+    color: #000;
+}
+
+#menu li a {
+    text-decoration: none;
+    color: #000;
+}
+
+#menu li.active a:hover {
+    color: #000;
+}
+
+#menu li:hover {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+#menu li a,
+#menu li.active a {
+    padding: 9px 18px;
+    display: block;
+}
+
+#menu li.active a {
+    color: #000;
+}
+
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 40px;
+    z-index: 70;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}           
+
+#infoMenu {
+    height: 20px;
+    color: #f2f2f2;
+    position: fixed;
+    z-index: 70;
+    bottom: 0;
+    width: 100%;
+    text-align: right;
+    font-size: 0.9em;
+    padding: 8px 0 8px 0;
+}
+
+#infoMenu ul {
+    padding: 0 40px;
+}
+
+#infoMenu li a {
+    display: block;
+    margin: 0 22px 0 0;
+    color: #333;
+}
+
+#infoMenu li a:hover {
+    text-decoration: underline;
+}
+
+#infoMenu li {
+    display: inline-block;
+    position: relative;
+}
+
+#examplesList {
+    display: none;
+    background: #282828;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    padding: 20px;
+    float: left;
+    position: absolute;
+    bottom: 29px;
+    right: 0;
+    width: 638px;
+    text-align: left;
+}           
+
+#examplesList ul {
+    padding: 0;
+}
+            
+#examplesList ul li {
+    display: block;
+    margin: 5px 0;
+}
+
+#examplesList ul li a {
+    color: #BDBDBD;
+    margin: 0;
+}
+
+#examplesList ul li a:hover {
+    color: #f2f2f2;
+}
+
+#examplesList .column {
+    float: left;
+    margin: 0 20px 0 0;
+}
+
+#examplesList h3 {
+    color: #f2f2f2;
+    font-size:          1.2em;
+    margin: 0 0 15px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+    padding: 0 0 5px 0;
+}
+
+
+/* Demos Menu
+ * --------------------------------------- */
+
+#demosMenu {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 999;
+}
+
+
+/*///// PORTFOLIO CSS /////*/
+
+img {
+    max-height: 70%;
+    border: none;
+}
+
+#left1 {
+    background-color: #000 !important;
+    background-image: url('./img/hacked1.jpg');
+    background-size: cover;
+}
+
+#left2 {
+    background-color: #FFA987 !important;
+}
+
+
+#right3 {
+    background-color: #81AE9D !important;
+
+}
+
+#left4 {
+    background-color: #FFA987 !important;
+}
+
+#right5 {
+    background-color: #81AE9D !important;
+}
+
+#left6 {
+    background-color: #FFA987 !important;
+}
+
+#right7 {
+    background-color: #81AE9D !important;
+}
+
+#left8 {
+    background-color: #FFA987 !important;
+}
+
+#right9 {
+    background-color: #81AE9D !important;
+}
+
+#left10 {
+    background-color: #FFA987 !important;
+}
+
+#right11 {
+    background-color: #81AE9D !important;
+}
+
+#left12 {
+    background-color: #FFA987 !important;
+}
+
+
+/* Button Styles */
+
+.about {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding: 15px 32px;
+    margin-top: 60px;
+    text-decoration: none;
+    font-size: 13px;
+    cursor: pointer;
+    border-radius: 50px;
+    border: #1D2530;
+    background-color: #313E50;
+    float: left;
+}
+
+.oasis {
+    font-family: sans-serif;
+    font-weight: bold;
+               color: #FFFFFF;
+    padding: 15px 32px;
+    margin-top: 60px;
+    text-decoration: none;
+    font-size: 13px;
+    cursor: pointer;
+    border-radius: 50px;
+    border: #512865;
+    background-color: #8B5E99;
+    float: left;
+}
+
+.homies {
+    font-family: sans-serif;
+    font-weight: bold;
+               color: #FFFFFF;
+    padding: 15px 32px;
+    margin-top: 60px;
+    text-decoration: none;
+    font-size: 13px;
+    cursor: pointer;
+    border-radius: 50px;
+    border: #DC2626;
+    background-color: #DB5461;
+    float: left;
+}
+
+.religion {
+    font-family: sans-serif;
+    font-weight: bold;
+               color: #FFFFFF;
+    padding: 15px 32px;
+    margin-top: 60px;
+    text-decoration: none;
+    font-size: 13px;
+    cursor: pointer;
+    border-radius: 50px;
+    border: #1A1A1A;
+    background-color: #161616;
+    float: left;
+}
+
+.fruits {
+    font-family: sans-serif;
+    font-weight: bold;
+               color: #FFFFFF;
+    padding: 15px 32px;
+    margin-top: 60px;
+    text-decoration: none;
+    font-size: 13px;
+    cursor: pointer;
+    border-radius: 50px;
+    border: #ECAD74;
+    background-color: #FF8E36;
+    float: left;
+}
+
+.pi {
+    width: 100%;
+    margin-bottom: 20px;
+}           
+
+.zoom {
+    /*padding: 10px;*/
+    background-color: white;
+    transition: transform .2s;
+    width: 350px;
+    margin: 0 auto;
+    margin-top: 150px;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 10px 10px #888888;
+}
+
+.zoom:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+}
+
+/*@media screen and (max-width: 930px) {
+    @font-face {
+        font-family: 'Campton Book';
+        src: url("/fonts/Campton-BoldDEMO.eot");
+        src: url("/fonts/Campton-BoldDEMO.eot?#iefix") format("embedded-open"), url("../fonts/Campton-BoldDEMO.woff") format("woff"), url("../fonts/Campton-BoldDEMO.ttf") format("truetype");
+        font-weight: bold;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'Campton Light';
+        src: url("/fonts/Campton-LightDEMO.eot");
+        src: url("/fonts/Campton-LightDEMO.eot?#iefix") format("embedded-opentype"), url("../fonts/Campton-LightDEMO.woff") format("woff"), url("../fonts/Campton-LightDEMO.ttf") format("truetype");
+        font-weight: 300;
+        font-style: normal
+    }
+    #myContainer {
+        display: none;
+    }
+    #multiscroll-nav {
+        display: none;
+    }
+    #first {
+        background-image: url(IMG_6009.JPG);
+        background-size: cover;
+        min-height: 100%;
+        position: relative;
+    }
+    #second {
+        background-color: #FFFFFF;
+        height: calc(100%);
+    }
+    .s2 {
+        height: 50%;
+    }
+    .s2:first-child {
+        background-color: #AB77C0;
+        background-image: url(images/logopurpm.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .s2:last-child {
+        background-color: #FFFFFF;
+    }
+    #third {
+        background-color: #FFFFFF;
+        height: calc(100%);
+    }
+    .s3 {
+        height: 50%;
+    }
+    .s3:first-child {
+        background-color: #DB5461;
+        position: relative;
+    }
+    .s3:last-child {
+        background-color: #FFFFFF;
+    }
+    .homiesm {
+        position: absolute;
+        bottom: 0;
+        margin-bottom: -12px;
+    }
+    #fourth {
+        background-color: #FFFFFF;
+        height: calc(100%);
+    }
+    .s4 {
+        height: 50%;
+    }
+    .s4:first-child {
+        background-image: url(images/svim.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: #000000;
+        position: relative;
+    }
+    .s4:last-child {
+        background-color: #FFFFFF;
+    }
+    #fifth {
+        background-color: #FFFFFF;
+        height: calc(100%);
+    }
+    .s5 {
+        height: 50%;
+    }
+    .s5:first-child {
+        background-image: url(images/religionm.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #EEF0F2;
+        position: relative;
+    }
+    .s5:last-child {
+        background-color: #FFFFFF;
+    }
+    #sixth {
+        background-color: #FFFFFF;
+        height: calc(100%);
+    }
+    .s6 {
+        height: 50%;
+    }
+    .s6:first-child {
+        background-image: url(images/fruitsm.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #EEF0F2;
+        position: relative;
+    }
+    .s6:last-child {
+        background-color: #FFFFFF;
+    }
+    h2 {
+        color: #FFFFFF;
+        padding-top: 20px;
+        padding-left: 20px;
+        font-family: sans-serif;
+    }
+    h4 {
+        color: #FFFFFF;
+        padding-left: 20px;
+        font-family:             sans-serif;
+    }
+    .pj {
+        color: #FFFFFF;
+        padding-left: 20px;
+        width: 300px            ;
+        bottom: 20px;
+        position: absolute;
+        font-family: sans-serif;
+    }
+    h3 {            
+        font-size: 16px;
+        font-weight: bold;
+        font-family: sans-serif;
+        text-align: center;
+        padding-top: 10px;
+    }
+    .mp {
+        font-size: 14px;
+        padding: 10px;
+        font-family: sans-serif;
+    }
+    .oasismb {
+        font-family: sans-serif;
+        font-weight: bold;
+        color: #FFFFFF;
+        padding: 15px 32px;
+        margin-top: 10px;
+        text-decoration: none;
+        font-size: 13px;
+        cursor: pointer;
+        border-radius: 50px;
+        border: #512865;
+        background-color: #8B5E99;
+        margin-left: 30%;
+    }
+    .homiesmb {
+        font-family: sans-serif;
+        font-weight: bold;
+        color: #FFFFFF;
+                   padding: 15px 32px;
+        margin-top: 10px;
+        text-decoration: none;
+        font-size: 13px;
+        cursor: pointer;
+        border-radius: 50px;
+        border: #DC2626;
+        background-color: #DB5461;
+        margin-left: 30%;
+    }
+    .religionmb {
+        font-family: sans-serif;
+        font-weight: bold;
+        color: #FFFFFF;
+                   padding: 15px 32px;
+        margin-top: 10px;
+        text-decoration: none;
+        font-size: 13px;
+        cursor: pointer;
+        border-radius: 50px;
+        border: #1A1A1A;
+        background-color: #161616;
+        margin-left: 30%;
+    }
+    .fruitsmb {
+        font-family: sans-serif;
+        font-weight: bold;
+        color: #FFFFFF;
+                   padding: 15px 32px;
+        margin-top: 10px;
+        text-decoration: none;
+        font-size: 13px;
+        cursor: pointer;
+        border-radius: 50px;
+        border: #ECAD74;
+        background-color: #FF8E36;
+        margin-left: 30%;
+    }
+}*/         

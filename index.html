@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DD Ezine</title>
+    <meta name="author" content="Alvaro Trigo Lopez" />
+    <meta name="description" content="multiscroll plugin by Alvaro Trigo. Create divided multi-scrolling pages with two splited vertical layouts or panels." />
+    <meta name="keywords" content="multiscroll,jquery,alvaro,trigo,plugin,divided,splitscreen,screen,panels,layouts,vertical,split,splited" />
+    <meta name="Resource-type" content="Document" />
+    <link rel="stylesheet" type="text/css" href="jquery.multiscroll.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.easings.min.js"></script>
+    <script type="text/javascript" src="jquery.multiscroll.js"></script>
+    <script type="text/javascript">
+
+
+        <!--
+        if (screen.width <= 930) {
+            window.location = "http://milangary.com";
+        }
+        //-->
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#myContainer').multiscroll({
+                sectionsColor: ['#FFFFFF', '#FFFFFF', '#FFFFFF', '#FFFFFF', '#FFFFFF', '#FFFFFF']
+                , anchors: ['first', 'second', 'third', 'fourth', 'fifth', 'sixth', 'seventh', 'eigth', 'ninth', 'tenth', 'eleventh', 'twelfth']
+                , menu: '#menu'
+                , navigation: true
+                , navigationTooltips: ['Intro', 'Panopticon', 'Panopticon', 'Open Book', 'Net Neutrality', 'GDRP', 'GDPR', 'APPS', 'Expats', 'VN Surveillance', 'Graph', 'Final']
+                , loopBottom: true
+                , loopTop: true
+            });
+        });
+    </script>
+    
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<body>
+
+    <div id="myContainer">
+    <script type="text/javascript"></script>
+
+        <div class="ms-left">
+            <div class="ms-section" id="left1"></div>
+            <div class="ms-section" id="left2"><!-- <img src="./img/artboard01.png" /> -->
+
+                <div class="zoom">
+                    <img src="./img/artboard01.png" style="width:100%">
+                </div>
+            </div>
+
+            <div class="ms-section" id="left3"> 
+                <div id="info">
+                    <h2>Katonah -> Sage</h2>
+                    <h4>Letter 2</h4>
+            <button onclick="typeWriter2()">More Info</button>
+                <p id="letter2"></p>
+
+                <script>
+                var a = 0;
+                var txt2 = 'This concept has never ceased to exist. Panopticon in present day, comes through our computers, phone, surveillance cameras, credit/debit cards, transportation, ect. We are being watched 24/7. Whistleblowers like Edward Snowden are risking their lives and well being to let the world know. That in itself is worth listening to.';
+                var speed = 30;
+
+                function typeWriter2() {
+                if (a < txt2.length) {
+                document.getElementById("letter2").innerHTML += txt2.charAt(a); a++;
+                setTimeout(typeWriter2, speed);
+                    }  
+                }
+                </script>
+                </div>  
+            </div>
+
+            <div class="ms-section" id="left4"> 
+                </script>
+
+                <div class="zoom">
+                    <img src="./img/artboard03.png" style="width:100%">
+                </div>
+            </div>
+            <div class="ms-section" id="left5"> 
+                <div id="info">
+                    <h2>Katonah -> Sage</h2>
+                    <h4>Letter 4</h4>
+                     <button onclick="typeWriter4()">More Info</button>
+                <p id="letter4"></p>
+
+                <script>
+                var c = 0;
+                var txt4 = 'Net Neutrality. This concept promotes and advocated for open and free internet. Without this, companies can decide who gets to access their site completely cutting off their resources to certain demographics. They would achieve this by creating both slow and fast tracks for different sites and services.This is a terrifying idea, but the reality is that December 14th, 2017 the FCC (Federal Communication Commision) rejected this idea of net neutrality. Ultimately giving organizations the power to reshape users online experiences. ';
+                var speed = 30;
+
+                function typeWriter4() {
+                if (c < txt4.length) {
+                document.getElementById("letter4").innerHTML += txt4.charAt(c); c++;
+                setTimeout(typeWriter4, speed);
+                    }
+                }
+                </script>
+                </div>
+            </div>
+
+            <div class="ms-section" id="left6"> 
+                <div class="zoom">
+                    <img src="./img/artboard05.png" style="width:100%">
+                </div>
+            </div>
+
+            <div class="ms-section" id="left7"> 
+                <div id="info">
+                    <h2>Katonah -> Sage</h2>
+                    <h4>Letter 6</h4>
+                <button onclick="typeWriter6()">More Info</button>
+                <p id="letter6"></p>
+
+                <script>
+                var e = 0;
+                var txt6 = '"Under GDPR, people who have consented to their personal data being processed also have a suite of associated rights — including the right to access data held about them (a copy of the data must be provided to them free of charge, typically within a month of a request); the right to request rectification of incomplete or inaccurate personal data; the right to have their data deleted (another so-called ‘right to be forgotten’ — with some exemptions, such as for exercising freedom of expression and freedom of information); the right to restrict processing; the right to data portability (where relevant, a data subject’s personal data must be provided free of charge and in a structured, commonly used and machine readable form).';
+                var speed = 30;
+
+                function typeWriter6() {
+                if (e < txt6.length) {
+                document.getElementById("letter6").innerHTML += txt6.charAt(e); e++;
+                setTimeout(typeWriter6, speed);
+                    }
+                }
+                </script>
+                </div>
+            </div>
+
+            <div class="ms-section" id="left8"> 
+
+                <div class="zoom">
+                    <img src="./img/artboard07.png" style="width:100%">
+                </div> 
+            </div>
+
+            <div class="ms-section" id="left9">  
+                <div id="info">
+                    <h2>Katonah -> Sage</h2>
+                    <h4>Letter 8</h4>
+                    <p>How many Americans move abroad? (2000-2015)</p>
+                    </a>
+                </div>
+                <div><iframe src="indexExpats.html" width="600" height="300"></iframe>
+                    </div>
+            </div>
+
+            <div class="ms-section" id="left10"> 
+
+                <div class="zoom">
+                    <img src="./img/artboard09.png" style="width:100%">
+                </div> 
+            </div>
+
+            <div class="ms-section" id="left11"> 
+                <div id="info">
+                    <h2>Katonah -> Sage</h2>
+                    <h4>Letter 10</h4>
+
+                    <p>VIETNAMESE TECH Exports (2000-2015)</p>
+                    </a>
+                </div>
+                <div><iframe src="indexVNtechexport.html" width="600" height="300"></iframe>
+                    </div>
+            </div>
+
+            <div class="ms-section" id="left12"> 
+
+                <div class="zoom">
+                    <img src="./img/artboard11.png" style="width:100%">
+                </div> 
+            </div>
+<!--             <div class="ms-section" id="left12"> <img src="./img/artboard12.png" /> </div> -->
+        </div>
+
+
+
+
+
+        <div class="ms-right">
+            <div class="ms-section" id="right1">
+                <div id="info">
+                    <h2>ESCAPE</h2>
+                    <h4>A Sequence of Hacked Emails Show One's Need to Escape America</h4>
+                    <p>
+                        You have access to private emails between two individuals. One individual wants to escape america due to the intrusive surveillance that exists. Where does she go? Why does she leave? Is she truly able to escape? <br> <br>
+                        The "More Info" buttons help to explain subtle mentioning within the email correspondence. 
+                    </p>
+                </div>
+            </div>
+            <div class="ms-section" id="right2">
+                <div id="info">
+                    <h2>Sage -> Katonah</h2>
+                    <h4>Letter 1</h4>
+                     <button onclick="typeWriter1()">More Info</button>
+                <p id="letter1"></p>
+
+                <script>
+                var z = 0;
+                var txt1 = 'This feeling of being watched stems from this structure called the Panopticon. Panopticon is an architectural structure that further enhanced the divide between the overseer and the subjects.This structure is most commonly seen in prisons and royal palaces. He who sees the most has the most power, that’s the concept that’s been the driving force of surveillance since the beginning of time. Foucault introduces the psychological effects of such a structure. This element seemed the most fascinating to me! There is a power transfer that occurs, within the structure. If you are subject to being watched 24/7, then you feel the eyes of those watching you at all times. As a prisoner within a cell, your visibility is isolated. This feeling alone can exaggerate the feeling of being observed, causing the subject to internalize that feeling to the point that he becomes his own overseer. Which is worst? Having someone observe you 24/7 or you unknowingly becoming the overseer? In general who should be entrusted with this power to observe?';
+                var speed = 30;
+
+                function typeWriter1() {
+                if (z < txt1.length) {
+                document.getElementById("letter1").innerHTML += txt1.charAt(z); z++;
+                setTimeout(typeWriter1, speed);
+                    }  
+                }
+                </script>
+                    </a>
+                </div>
+            </div>
+
+            <div class="ms-section" id="right3">
+
+                <div class="zoom">
+                    <img src="./img/artboard02.png" style="width:100%">
+                </div> 
+            </div>
+
+            <div class="ms-section" id="right4">
+                <div id="info">
+                    <h2>Sage -> Katonah</h2>
+                    <h4>Letter 3</h4>
+
+                    <button onclick="typeWriter3()">More Info</button>
+                <p id="letter3"></p>
+
+                <script>
+                var b = 0;
+                var txt3 = 'BEING AN OPEN BOOK? This is a dangerous mentality to have. You might have nothing to hide but that is not the point. With the lack of data privacy laws you can become a victim to microtargeting and this concept can be detrimental when used for political agendas. Cambridge Analytica is a small analytic company that obtained, harvested, and mined facebook user data to create psychographic profiles. These psychographic profiles claimed to be able to predict the personalities and political affiliations of American Adults. This information is gold for politicians. If they were to get their hands on such data, than they could target specific individuals with personalized ads. Even though you might have nothing to hide, the abuse of your personal data can lead to an abrupt political change in government.';
+                var speed = 30;
+
+                function typeWriter3() {
+                if (b < txt3.length) {
+                document.getElementById("letter3").innerHTML += txt3.charAt(b); b++;
+                setTimeout(typeWriter3, speed);
+                    }
+                }
+                </script>
+                </div>
+            </div>
+            <div class="ms-section" id="right5">
+
+                <div class="zoom">
+                    <img src="./img/artboard04.png" style="width:100%">
+                </div>
+            </div>
+
+            <div class="ms-section" id="right6">
+                <div id="info">
+                    <h2>Sage -> Katonah</h2>
+                    <h4>Letter 5</h4>
+                <button onclick="typeWriter5()">More Info</button>
+                <p id="letter5"></p>
+
+                <script>
+                var d = 0;
+                var txt5 = 'The EU data protection reform is meant to give citizens back control over their data. They genuinely believe that consumer trust is key to fostering a digital growing community. GDPR = General Data Protection Regulation. The GDPR is taking this notion very seriously. Under the GDPR, having a Data Protection Officer for organizations/corporations is now required. With Facebook and Google both have a strong international presence, they will need to comply to these regulations.It is reassuring to see that the GDPR inspire smaller organizations like NOYB to also advocate for individual data rights. NOYB (None of Your Business) is a proposed data redress body. In a split second the individual can decide that they want part of their data removed, organizations with the data have 30 days to locate and carry out the request.';
+                var speed = 30;
+
+                function typeWriter5() {
+                if (d < txt5.length) {
+                document.getElementById("letter5").innerHTML += txt5.charAt(d); d++;
+                setTimeout(typeWriter5, speed);
+                    }
+                }
+                </script>
+                </div>
+
+            <div class="ms-section" id="right7">
+                <div class="zoom">
+                    <img src="./img/artboard06.png" style="width:100%">
+                </div>
+            </div>
+
+            <div class="ms-section" id="right8">
+                <div id="info">
+                    <h2>Sage -> Katonah</h2>
+                    <h4>Letter 7</h4>
+                <button onclick="typeWriter7()">More Info</button>
+                <p id="letter7"></p>
+
+                <script>
+                var f = 0;
+                var txt7 = 'DELETION OF APPS: Does it really help? Yes and No. Though the app can no long track you and collect current data, many apps still tag your data after deleting the app. This data can then be used to determine the characteristics of who owned the phone. Uber is known for tagging user data. Facebook uses what they call the social graph to track peoples activity across the internet... beyond facebook. "If app developers could truly track you after you’ve deleted the app, it would “violate Apple developer terms and show a giant security hole in, the iOS operating system", says Jerome (privacy & data policy counselor for the Center for Democracy and Technology) DELETION OF APPS DOESNT DELETE DATA';
+                var speed = 30;
+
+                function typeWriter7() {
+                if (f < txt7.length) {
+                document.getElementById("letter7").innerHTML += txt7.charAt(f); f++;
+                setTimeout(typeWriter7, speed);
+                    }
+                }
+                </script>
+                </div>
+
+            <div class="ms-section" id="right9">
+                </script>
+
+                <div class="zoom">
+                    <img src="./img/artboard08.png" style="width:100%">
+                </div>
+            </div>
+
+            <div class="ms-section" id="right10">
+                <div id="info">
+                    <h2>Sage -> Katonah</h2>
+                    <h4>Letter 9</h4>
+                <button onclick="typeWriter9()">More Info</button>
+                <p id="letter9"></p>
+
+                <script>
+                var h = 0;
+                var txt9 = 'VIETNAM is narrow country in Southeast Asia internationally known for the war that existed between US forces and the Northern Vietnamese communist party who took over the country. Since the war surveillance has increased throughout the nation. Being a developing country Vietnam doesn’t have advanced technology or infrastructure so this surveillance is minimal compared to the surveillance within the US but it is one of the fastest growing markets in Southeast Asia, today, focusing on bettering its transportation, energy, irrigation, and urban development. With each of these improvements there is a need for more security products and systems.';
+                var speed = 30;
+
+                function typeWriter9() {
+                if (h < txt9.length) {
+                document.getElementById("letter9").innerHTML += txt9.charAt(h); h++;
+                setTimeout(typeWriter9, speed);
+                    }
+                }
+                </script>
+                </div>
+
+            <div class="ms-section" id="right11">
+
+                <div class="zoom">
+                    <img src="./img/artboard10.png" style="width:100%">
+                </div>
+            </div>
+
+            <div class="ms-section" id="right12">
+                <div id="info">
+                    <h2>Sage -> Katonah</h2>
+                    <h4>Letter 11</h4>
+                    <p>PICTURE OF ELECTRICAL WIRES</p>
+                    </a>
+                </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
